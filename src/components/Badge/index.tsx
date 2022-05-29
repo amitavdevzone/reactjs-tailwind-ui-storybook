@@ -24,7 +24,11 @@ export const Badge: FC<Props> = ({
 
   useEffect(() => {
     handleStyleChange();
-  }, [null, variant, lightText, withBg]);
+  }, []);
+
+  useEffect(() => {
+    handleStyleChange();
+  }, [variant, lightText, withBg]);
 
   const handleStyleChange = () => {
     // get the class object based on variant
